@@ -1,12 +1,14 @@
 package br.net.glaubergad.personapidio.controller;
 
 import br.net.glaubergad.personapidio.dto.MessageResponseDto;
+import br.net.glaubergad.personapidio.dto.PersonDto;
 import br.net.glaubergad.personapidio.entity.Person;
 import br.net.glaubergad.personapidio.service.PersonService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.List;
 
 @RestController
@@ -32,8 +34,8 @@ public class PersonController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public MessageResponseDto postPerson(@RequestBody Person person) {
-        return personService.createPerson(person);
+    public MessageResponseDto postPerson(@RequestBody @Valid PersonDto personDto) {
+        return personService.createPerson(personDto);
     }
 
     @PutMapping("/{id}")

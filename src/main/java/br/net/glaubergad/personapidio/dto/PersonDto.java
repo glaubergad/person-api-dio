@@ -1,12 +1,14 @@
 package br.net.glaubergad.personapidio.dto;
 
-import br.net.glaubergad.personapidio.entity.Phone;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.validator.constraints.br.CPF;
 
-import java.time.LocalDate;
+import javax.validation.Valid;
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.Size;
 import java.util.List;
 
 @Data
@@ -17,13 +19,22 @@ public class PersonDto {
 
     private Long id;
 
+    @NotEmpty
+    @Size(min = 2, max = 100)
     private String firstName;
 
+    @NotEmpty
+    @Size(min = 2, max = 100)
     private String lastName;
 
+    @NotEmpty
+    @CPF
     private String cpf;
 
-    private LocalDate birthDate;
+    private String birthDate;
 
-    private List<Phone> phones;
+    @Valid
+    @NotEmpty
+    private List<PhoneDto> phones;
+
 }
