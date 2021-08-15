@@ -39,8 +39,10 @@ public class PersonController {
     }
 
     @PutMapping("/{id}")
-    public String putPerson() {
-        return "putPerson";
+    @ResponseStatus(HttpStatus.OK)
+    public MessageResponseDto putPerson(@PathVariable Long id, @RequestBody @Valid PersonDto personDto) throws PersonNotFoundException{
+
+        return personService.putPerson(id,personDto);
     }
 
     @DeleteMapping("/{id}")

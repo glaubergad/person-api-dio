@@ -10,16 +10,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service
 public class PersonService {
 
 
-    private PersonRepository personRepository;
-
     private final PersonMapper personMapper = PersonMapper.INSTANCE;
+    private final PersonRepository personRepository;
 
     @Autowired
     public PersonService(PersonRepository personRepository) {
@@ -27,15 +25,10 @@ public class PersonService {
     }
 
 
-
-
     public MessageResponseDto createPerson(PersonDto personDto) {
         Person personToSave = personMapper.toModel(personDto);
-
         Person savedPerson = personRepository.save(personToSave);
-        return MessageResponseDto.builder()
-                .message("Created person with ID:" + savedPerson.getId())
-                .build();
+        return buildMessageDto(savedPerson.getId(), "Created person with ID:");
     }
 
     public List<PersonDto> getPersonList() {
@@ -53,13 +46,25 @@ public class PersonService {
     }
 
 
-
     public void deletePerson(Long id) throws PersonNotFoundException {
-        Person person = verifyIfPersonExists(id);
+        verifyIfPersonExists(id);
         personRepository.deleteById(id);
     }
 
+    public MessageResponseDto putPerson(Long id, PersonDto personDto) throws PersonNotFoundException {
+        verifyIfPersonExists(personDto.getId());
+        Person personToUpdate = personMapper.toModel(personDto);
+        personRepository.save(personToUpdate);
+        return buildMessageDto(personToUpdate.getId(), "Updated person with ID:");
+    }
+
+    private MessageResponseDto buildMessageDto(Long id, String s) {
+        return MessageResponseDto.builder()
+                .message(s + id)
+                .build();
+    }
+
     private Person verifyIfPersonExists(Long id) throws PersonNotFoundException {
-        return personRepository.findById(id).orElseThrow(()-> new PersonNotFoundException(id));
+        return personRepository.findById(id).orElseThrow(() -> new PersonNotFoundException(id));
     }
 }
