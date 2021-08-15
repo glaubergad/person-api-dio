@@ -14,6 +14,7 @@ public interface PersonMapper {
     @Mapping(source="birthDate", target="birthDate", dateFormat = "dd-MM-yyyy")
     Person toModel(PersonDto personDto);
 
+    @Mapping(source="birthDate", target="birthDate", dateFormat = "dd-MM-yyyy")
     PersonDto toDto(Person person);
 
 }

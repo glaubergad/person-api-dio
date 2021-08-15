@@ -2,6 +2,7 @@ package br.net.glaubergad.personapidio.controller;
 
 import br.net.glaubergad.personapidio.dto.MessageResponseDto;
 import br.net.glaubergad.personapidio.dto.PersonDto;
+import br.net.glaubergad.personapidio.exception.PersonNotFoundException;
 import br.net.glaubergad.personapidio.service.PersonService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -27,8 +28,8 @@ public class PersonController {
     }
 
     @GetMapping("/{id}")
-    public String getPersonById() {
-        return "GetPeople By ID";
+    public PersonDto getPersonById(@PathVariable Long id) throws PersonNotFoundException {
+        return personService.getPersonById(id);
     }
 
     @PostMapping
