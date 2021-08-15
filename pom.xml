@@ -9,12 +9,12 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>br.net.glaubergad</groupId>
-	<artifactId>personapi</artifactId>
+	<artifactId>personapi-dio</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>personapi</name>
-	<description>Person API Development Project DIO</description>
+	<name>personapi-dio</name>
+	<description>Projeto de API para Bootcamp da DIO</description>
 	<properties>
-		<java.version>1.8</java.version>
+		<java.version>11</java.version>
 	</properties>
 	<dependencies>
 		<dependency>

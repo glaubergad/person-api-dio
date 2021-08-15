@@ -1,13 +1,13 @@
-package br.net.glaubergad.personapi;
+package br.net.glaubergad.personapidio;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class PersonapiApplication {
+public class PersonapiDioApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(PersonapiApplication.class, args);
+		SpringApplication.run(PersonapiDioApplication.class, args);
 	}
 
 }

@@ -1,6 +1,6 @@
-package br.net.glaubergad.personapi.service;
+package br.net.glaubergad.personapidio.service;
 
-import br.net.glaubergad.personapi.repository.PersonRepository;
+import br.net.glaubergad.personapidio.repository.PersonRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

@@ -1,8 +1,8 @@
-package br.net.glaubergad.personapi.controller;
+package br.net.glaubergad.personapidio.controller;
 
-import br.net.glaubergad.personapi.dto.MessageResponseDto;
-import br.net.glaubergad.personapi.entity.Person;
-import br.net.glaubergad.personapi.repository.PersonRepository;
+import br.net.glaubergad.personapidio.dto.MessageResponseDto;
+import br.net.glaubergad.personapidio.entity.Person;
+import br.net.glaubergad.personapidio.repository.PersonRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

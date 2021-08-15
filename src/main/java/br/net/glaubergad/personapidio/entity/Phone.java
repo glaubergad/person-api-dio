@@ -1,4 +1,4 @@
-package br.net.glaubergad.personapi.entity;
+package br.net.glaubergad.personapidio.entity;
 
 import br.net.glaubergad.personapi.enums.PhoneType;
 import lombok.AllArgsConstructor;

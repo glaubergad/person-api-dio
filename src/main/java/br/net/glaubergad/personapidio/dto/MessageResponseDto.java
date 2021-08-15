@@ -1,4 +1,4 @@
-package br.net.glaubergad.personapi.dto;
+package br.net.glaubergad.personapidio.dto;
 
 
 import lombok.Builder;

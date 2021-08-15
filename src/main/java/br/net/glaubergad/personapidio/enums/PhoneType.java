@@ -1,4 +1,4 @@
-package br.net.glaubergad.personapi.enums;
+package br.net.glaubergad.personapidio.enums;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
