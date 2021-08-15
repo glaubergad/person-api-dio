@@ -6,6 +6,7 @@ import br.net.glaubergad.personapidio.entity.Person;
 import br.net.glaubergad.personapidio.exception.PersonNotFoundException;
 import br.net.glaubergad.personapidio.mapper.PersonMapper;
 import br.net.glaubergad.personapidio.repository.PersonRepository;
+import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -13,16 +14,12 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Service
+@AllArgsConstructor(onConstructor = @__(@Autowired) )
 public class PersonService {
 
 
     private final PersonMapper personMapper = PersonMapper.INSTANCE;
     private final PersonRepository personRepository;
-
-    @Autowired
-    public PersonService(PersonRepository personRepository) {
-        this.personRepository = personRepository;
-    }
 
 
     public MessageResponseDto createPerson(PersonDto personDto) {

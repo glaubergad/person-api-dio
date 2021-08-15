@@ -4,6 +4,7 @@ import br.net.glaubergad.personapidio.dto.MessageResponseDto;
 import br.net.glaubergad.personapidio.dto.PersonDto;
 import br.net.glaubergad.personapidio.exception.PersonNotFoundException;
 import br.net.glaubergad.personapidio.service.PersonService;
+import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
@@ -13,14 +14,11 @@ import java.util.List;
 
 @RestController
 @RequestMapping("api/v1/people")
+@AllArgsConstructor(onConstructor = @__(@Autowired) )
 public class PersonController {
 
     private final PersonService personService;
 
-    @Autowired
-    public PersonController(PersonService personService) {
-        this.personService = personService;
-    }
 
     @GetMapping
     public List<PersonDto> getPersonList() {
