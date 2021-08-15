@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 public class PersonService {
@@ -35,8 +36,13 @@ public class PersonService {
                 .build();
     }
 
-    public List<Person> getPersonList() {
-        return personRepository.findAll();
+    public List<PersonDto> getPersonList() {
+
+        return personRepository
+                .findAll()
+                .stream()
+                .map(personMapper::toDto)
+                .collect(Collectors.toList());
     }
 
 }

@@ -2,7 +2,6 @@ package br.net.glaubergad.personapidio.controller;
 
 import br.net.glaubergad.personapidio.dto.MessageResponseDto;
 import br.net.glaubergad.personapidio.dto.PersonDto;
-import br.net.glaubergad.personapidio.entity.Person;
 import br.net.glaubergad.personapidio.service.PersonService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -23,7 +22,7 @@ public class PersonController {
     }
 
     @GetMapping
-    public List<Person> getPersonList() {
+    public List<PersonDto> getPersonList() {
         return personService.getPersonList();
     }
 
