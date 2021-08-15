@@ -21,8 +21,8 @@ public class PersonController {
     }
 
     @GetMapping
-    public List<Person> getPeople() {
-        return personService.findAll();
+    public List<Person> getPersonList() {
+        return personService.getPersonList();
     }
 
     @GetMapping("/{id}")
@@ -33,7 +33,7 @@ public class PersonController {
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     public MessageResponseDto postPerson(@RequestBody Person person) {
-        return personService.personSave(person);
+        return personService.createPerson(person);
     }
 
     @PutMapping("/{id}")

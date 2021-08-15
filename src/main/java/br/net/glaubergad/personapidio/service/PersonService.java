@@ -19,18 +19,15 @@ public class PersonService {
         this.personRepository = personRepository;
     }
 
-    public MessageResponseDto personSave(Person person) {
+    public MessageResponseDto createPerson(Person person) {
         Person savedPerson = personRepository.save(person);
         return MessageResponseDto.builder()
                 .message("Created person with ID:" + savedPerson.getId())
                 .build();
     }
 
-    public List<Person> getPeople() {
+    public List<Person> getPersonList() {
         return personRepository.findAll();
     }
 
-    public List<Person> findAll() {
-        return personRepository.findAll();
-    }
 }
