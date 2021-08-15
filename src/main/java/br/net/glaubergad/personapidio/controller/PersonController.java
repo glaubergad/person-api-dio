@@ -2,23 +2,27 @@ package br.net.glaubergad.personapidio.controller;
 
 import br.net.glaubergad.personapidio.dto.MessageResponseDto;
 import br.net.glaubergad.personapidio.entity.Person;
-import br.net.glaubergad.personapidio.repository.PersonRepository;
+import br.net.glaubergad.personapidio.service.PersonService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Arrays;
 import java.util.List;
 
 @RestController
 @RequestMapping("api/v1/people")
 public class PersonController {
 
+    private final PersonService personService;
+
     @Autowired
-    private PersonRepository personRepository;
+    public PersonController(PersonService personService) {
+        this.personService = personService;
+    }
 
     @GetMapping
     public List<Person> getPeople() {
-        return personRepository.findAll();
+        return personService.findAll();
     }
 
     @GetMapping("/{id}")
@@ -27,21 +31,19 @@ public class PersonController {
     }
 
     @PostMapping
+    @ResponseStatus(HttpStatus.CREATED)
     public MessageResponseDto postPerson(@RequestBody Person person) {
-        Person savedPerson = personRepository.save(person);
-        return MessageResponseDto.builder()
-                .message("Created person with ID:" + savedPerson.getId())
-                .build();
+        return personService.personSave(person);
     }
 
     @PutMapping("/{id}")
     public String putPerson() {
-        return "API Test";
+        return "putPerson";
     }
 
     @DeleteMapping("/{id}")
     public String deletePerson() {
-        return "API Test";
+        return "deletePerson";
     }
 
 }
