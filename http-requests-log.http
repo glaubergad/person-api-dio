@@ -1,0 +1,860 @@
+DELETE https://glaubergad-peopleapi.herokuapp.com/api/v1/people/1
+
+###
+
+GET https://glaubergad-peopleapi.herokuapp.com/api/v1/people
+Accept: application/json
+
+<> 2021-08-15T190316.200.json
+
+###
+
+GET https://glaubergad-peopleapi.herokuapp.com/api/v1/people/1
+Accept: application/json
+
+<> 2021-08-15T185732.200.json
+
+###
+
+PUT https://glaubergad-peopleapi.herokuapp.com/api/v1/people/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "firstName": "Glauber",
+  "lastName": "Gadelha",
+  "cpf": "26558977818",
+  "birthDate": "15-12-1976",
+  "phones": [
+    {
+      "id": 1,
+      "type": "MOBILE",
+      "number": "(91)98083-4019"
+    },
+    {
+      "id": 2,
+"type": "COMMERCIAL",
+"number": "(91)3231-9907"
+}
+]
+}
+
+<> 2021-08-15T185723.200.json
+
+###
+
+GET https://glaubergad-peopleapi.herokuapp.com/api/v1/people/1
+Accept: application/json
+
+<> 2021-08-15T185536.200.json
+
+###
+
+GET https://glaubergad-peopleapi.herokuapp.com/api/v1/people
+Accept: application/json
+
+<> 2021-08-15T185513.200.json
+
+###
+
+POST https://glaubergad-peopleapi.herokuapp.com/api/v1/people
+Content-Type: application/json
+
+{
+  "firstName": "Glauber",
+  "lastName": "Gadelha",
+  "cpf": "26558977818",
+  "birthDate": "15-12-1976",
+  "phones": [
+    {
+      "type": "MOBILE",
+      "number": "(91)98083-4019"
+    },
+    {
+      "type": "COMMERCIAL",
+      "number": "(91)3231-4019"
+    }
+  ]
+}
+
+<> 2021-08-15T185448.201.json
+
+###
+
+GET http://localhost:8080/api/v1/people
+Accept: application/json
+
+<> 2021-08-15T174657.200.json
+
+###
+
+PUT http://localhost:8080/api/v1/people/2
+Content-Type: application/json
+
+{
+  "id": 2,
+  "firstName": "Glauber",
+  "lastName": "Matteis Gadelha",
+  "cpf": "26558977818",
+  "birthDate": "15-12-1976",
+  "phones": [
+    {  "id": 2,
+       "type": "MOBILE",
+      "number": "(91)98083-4019"
+    },
+    {  "id": 3,
+       "type": "COMMERCIAL",
+      "number": "(91)3231-9907"
+    }
+  ]
+}
+
+POST https://glaubergad-peopleapi.herokuapp.com/api/vi/people
+Content-Type: application/json
+
+{
+  "firstName": "Glauber",
+  "lastName": "Gadelha",
+  "cpf": "26558977818",
+  "birthDate": "15-12-1976",
+  "phones": [
+    {
+      "type": "MOBILE",
+      "number": "(91)98083-4019"
+    }
+  ]
+}
+
+<> 2021-08-15T174650.200.json
+
+###
+
+PUT http://localhost:8080/api/v1/people/2
+Content-Type: application/json
+
+{
+  "firstName": "Glauber",
+  "lastName": "Gadelha",
+  "cpf": "26558977818",
+  "birthDate": "15-12-1976",
+  "phones": [
+    {  "id": 2,
+       "type": "MOBILE",
+      "number": "(91)98083-4019"
+    },
+    {  "id": 3,
+       "type": "COMMERCIAL",
+      "number": "(91)3231-9907"
+    }
+  ]
+}
+
+POST http://localhost:8080/api/v1/people
+Content-Type: application/json
+
+{
+  "firstName": "Glauber",
+  "lastName": "Gadelha",
+  "cpf": "26558977818",
+  "birthDate": "15-12-1976",
+  "phones": [
+    {
+      "type": "MOBILE",
+      "number": "(91)98083-4019"
+    }
+  ]
+}
+
+<> 2021-08-15T174626.500.json
+
+###
+
+PUT http://localhost:8080/api/v1/people/2
+{:
+  "id": 2,
+  "firstName": "Glauber",
+  "lastName": "Gadelha",
+  "cpf": "26558977818",
+  "birthDate": "15-12-1976",
+  "phones": [
+    {  "id": 2,
+       "type": "MOBILE",
+      "number": "(91)98083-4019"
+    },:
+    {  "id": 3,
+       "type": "COMMERCIAL",
+      "number": "(91)3231-9907"
+    }:
+  ]:
+}:
+
+POST http://localhost:8080/api/v1/people
+Content-Type: application/json
+
+{
+  "firstName": "Glauber",
+  "lastName": "Gadelha",
+  "cpf": "26558977818",
+  "birthDate": "15-12-1976",
+  "phones": [
+    {
+      "type": "MOBILE",
+      "number": "(91)98083-4019"
+    }
+  ]
+}
+
+<> 2021-08-15T174505.400.html
+
+###
+
+PUT http://localhost:8080/api/v1/people/2
+Content-Type: application/json
+
+{
+  "id": 2,
+  "firstName": "Glauber",
+  "lastName": "Matteis Gadelha",
+  "cpf": "26558977818",
+  "birthDate": "15-12-1976",
+  "phones": [
+    {  "id": 2,
+       "type": "MOBILE",
+      "number": "(91)98083-4019"
+    },
+    {  "id": 3,
+       "type": "COMMERCIAL",
+      "number": "(91)3231-9907"
+    }
+  ]
+}
+
+POST http://localhost:8080/api/v1/people
+Content-Type: application/json
+
+{
+  "firstName": "Glauber",
+  "lastName": "Gadelha",
+  "cpf": "26558977818",
+  "birthDate": "15-12-1976",
+  "phones": [
+    {
+      "type": "MOBILE",
+      "number": "(91)98083-4019"
+    }
+  ]
+}
+
+<> 2021-08-15T174410.400.html
+
+###
+
+GET http://localhost:8080/api/v1/people
+Accept: application/json
+
+<> 2021-08-15T174217.200.json
+
+###
+
+POST http://localhost:8080/api/v1/people
+Content-Type: application/json
+
+
+{
+  "firstName": "Glauber",
+  "lastName": "Gadelha",
+  "cpf": "26558977818",
+  "birthDate": "15-12-1976",
+  "phones": [
+    {
+      "type": "MOBILE",
+      "number": "(91)98083-4019"
+    }
+  ]
+}
+
+<> 2021-08-15T174201.500.json
+
+###
+
+PUT http://localhost:8080/api/v1/people/2
+{
+  "id": 2,
+  "firstName": "Glauber",
+  "lastName": "Gadelha",
+  "cpf": "26558977818",
+  "birthDate": "15-12-1976",
+  "phones": [
+    {  "id": 2,
+       "type": "MOBILE",
+      "number": "(91)98083-4019"
+    }
+  ]
+}
+
+POST http://localhost:8080/api/v1/people
+Content-Type: application/json
+
+{
+  "firstName": "Glauber",
+  "lastName": "Gadelha",
+  "cpf": "26558977818",
+  "birthDate": "15-12-1976",
+  "phones": [
+    {
+      "type": "MOBILE",
+      "number": "(91)98083-4019"
+    }
+  ]
+}
+
+<> 2021-08-15T174142.400.html
+
+###
+
+PUT http://localhost:8080/api/v1/people/2
+{:
+  "firstName": "Glauber",
+  "lastName": "Gadelha",
+  "cpf": "26558977818",
+  "birthDate": "15-12-1976",
+  "phones": [
+    {:
+      "type": "MOBILE",
+      "number": "(91)98083-4019"
+    },:
+ {:
+      "type": "COMMERCIAL",
+      "number": "(91)3231-9907"
+    }:
+  ]:
+}:
+
+POST http://localhost:8080/api/v1/people
+Content-Type: application/json
+
+{
+  "firstName": "Glauber",
+  "lastName": "Gadelha",
+  "cpf": "26558977818",
+  "birthDate": "15-12-1976",
+  "phones": [
+    {
+      "type": "MOBILE",
+      "number": "(91)98083-4019"
+    }
+  ]
+}
+
+<> 2021-08-15T173901.400.html
+
+###
+
+PUT http://localhost:8080/api/v1/people/2
+{
+  "firstName": "Glauber",
+  "lastName": "Gadelha",
+  "cpf": "26558977818",
+  "birthDate": "15-12-1976",
+  "phones": [
+    {
+      "type": "MOBILE",
+      "number": "(91)98083-4019"
+    }
+  ]
+}
+
+
+POST http://localhost:8080/api/v1/people
+Content-Type: application/json
+
+{
+  "firstName": "Glauber",
+  "lastName": "Gadelha",
+  "cpf": "26558977818",
+  "birthDate": "15-12-1976",
+  "phones": [
+    {
+      "id"
+      "type": "MOBILE",
+      "number": "(91)98083-4019"
+    }
+  ]
+}
+
+<> 2021-08-15T173753.201.json
+
+###
+
+DELETE http://localhost:8080/api/v1/people/1
+
+GET http://localhost:8080/api/v1/people/1
+Accept: application/json
+
+<> 2021-08-15T173734.404.json
+
+###
+
+DELETE http://localhost:8080/api/v1/people/2
+
+GET http://localhost:8080/api/v1/people/1
+Accept: application/json
+
+###
+
+GET http://localhost:8080/api/v1/people
+Accept: application/json
+
+<> 2021-08-15T173658.200.json
+
+###
+
+POST http://localhost:8080/api/v1/people
+Content-Type: application/json
+
+{
+  "firstName": "Glauber",
+  "lastName": "Gadelha",
+  "cpf": "26558977818",
+  "birthDate": "15-12-1976",
+  "phones": [
+    {
+      "type": "MOBILE",
+      "number": "(91)98083-4019"
+    }
+  ]
+}
+
+<> 2021-08-15T173646.201.json
+
+###
+
+DELETE http://localhost:8080/api/v1/people/1
+
+GET http://localhost:8080/api/v1/people/1
+Accept: application/json
+
+<> 2021-08-15T170538.404.json
+
+###
+
+DELETE http://localhost:8080/api/v1/people/1
+
+GET http://localhost:8080/api/v1/people/1
+Accept: application/json
+
+###
+
+DELETE http://localhost:8080/api/v1/people/1
+
+
+GET http://localhost:8080/api/v1/people/1
+Accept: application/json
+
+<> 2021-08-15T170458.200.json
+
+###
+
+POST http://localhost:8080/api/v1/people
+Content-Type: application/json
+
+{
+  "firstName": "Glauber",
+  "lastName": "Gadelha",
+  "cpf": "26558977818",
+  "birthDate": "15-12-1976",
+  "phones": [
+    {
+      "type": "MOBILE",
+      "number": "(91)98083-4019"
+    }
+  ]
+}
+
+<> 2021-08-15T170445.201.json
+
+###
+
+GET http://localhost:8080/api/v1/people/2
+Accept: application/json
+
+<> 2021-08-15T165553.404.json
+
+###
+
+GET http://localhost:8080/api/v1/people/1
+Accept: application/json
+
+<> 2021-08-15T165544.200.json
+
+###
+
+GET http://localhost:8080/api/v1/people
+Accept: application/json
+
+<> 2021-08-15T165458.200.json
+
+###
+
+POST http://localhost:8080/api/v1/people
+Content-Type: application/json
+
+{
+  "firstName": "Glauber",
+  "lastName": "Gadelha",
+  "cpf": "26558977818",
+  "birthDate": "15-12-1976",
+  "phones": [
+    {
+      "type": "MOBILE",
+      "number": "(91)98083-4019"
+    }
+  ]
+}
+
+<> 2021-08-15T165445.201.json
+
+###
+
+GET http://localhost:8080/api/v1/people
+Accept: application/json
+
+<> 2021-08-15T164042.200.json
+
+###
+
+POST http://localhost:8080/api/v1/people
+Content-Type: application/json
+
+{
+  "firstName": "Glauber",
+  "lastName": "Gadelha",
+  "cpf": "26558977818",
+  "birthDate": "15-12-1976",
+  "phones": [
+    {
+      "type": "MOBILE",
+      "number": "(91)98083-4019"
+    }
+  ]
+}
+
+<> 2021-08-15T164037.201.json
+
+###
+
+GET http://localhost:8080/api/v1/people
+Accept: application/json
+
+<> 2021-08-15T163844.200.json
+
+###
+
+POST http://localhost:8080/api/v1/people
+Content-Type: application/json
+
+{
+  "firstName": "Glauber",
+  "lastName": "Gadelha",
+  "cpf": "26558977818",
+  "birthDate": "15-12-1976",
+  "phones": [
+    {
+      "type": "MOBILE",
+      "number": "(91)98083-4019"
+    }
+  ]
+}
+
+<> 2021-08-15T163837.201.json
+
+###
+
+GET http://localhost:8080/api/v1/people
+Accept: application/json
+
+<> 2021-08-15T163022.200.json
+
+###
+
+POST http://localhost:8080/api/v1/people
+Content-Type: application/json
+
+{
+  "firstName": "Glauber",
+  "lastName": "Gadelha",
+  "cpf": "26558977818",
+  "birthDate": "15-12-1976",
+  "phones": [
+    {
+      "type": "MOBILE",
+      "number": "(91)98083-4019"
+    }
+  ]
+}
+
+<> 2021-08-15T163017.201.json
+
+###
+
+POST http://localhost:8080/api/v1/people
+Content-Type: application/json
+
+{
+  "firstName": "Glauber",
+  "lastName": "Gadelha",
+  "cpf": "12345678901",
+  "birthDate": "15-12-1976",
+  "phones": [
+    {
+      "type": "MOBILE",
+      "number": "(91)98083-4019"
+    }
+  ]
+}
+
+<> 2021-08-15T162509.400.json
+
+###
+
+POST http://localhost:8080/api/v1/people
+Content-Type: application/json
+
+{
+  "firstName": "Glauber",
+  "lastName": "Gadelha",
+  "cpf": "26558977",
+  "birthDate": "15-12-1976",
+  "phones": [
+    {
+      "type": "MOBILE",
+      "number": "(91)98083-4019"
+    }
+  ]
+}
+
+<> 2021-08-15T162453.400.json
+
+###
+
+POST http://localhost:8080/api/v1/people
+Content-Type: application/json
+
+{
+  "firstName": "Glauber",
+  "lastName": "Gadelha",
+  "cpf": "265589778123123123",
+  "birthDate": "15-12-1976",
+  "phones": [
+    {
+      "type": "MOBILE",
+      "number": "(91)98083-4019"
+    }
+  ]
+}
+
+<> 2021-08-15T162440.400.json
+
+###
+
+POST http://localhost:8080/api/v1/people
+Content-Type: application/json
+
+{
+  "firstName": "Glauber",
+  "lastName": "Gadelha",
+  "cpf": "265589778123123123",
+  "birthDate": "15-12-1976",
+  "phones": [
+    {
+      "type": "MOBILE",
+      "number": "(91)98083-4019"
+    }
+  ]
+}
+
+<> 2021-08-15T161859.201.json
+
+###
+
+POST http://localhost:8080/api/v1/people
+Content-Type: application/json
+
+{
+  "firstName": "Glauber",
+  "lastName": "Gadelha",
+  "cpf": "265589778",
+  "birthDate": "15-12-1976",
+  "phones": [
+    {
+      "type": "MOBILE",
+      "number": "(91)98083-4019"
+    }
+  ]
+}
+
+<> 2021-08-15T161835.500.json
+
+###
+
+POST http://localhost:8080/api/v1/people
+Content-Type: application/json
+
+{
+  "firstName": "Glauber",
+  "lastName": "Gadelha",
+  "cpf": "265589778",
+  "birthDate": "15-12-1976",
+  "phones": [
+    {
+      "type": "MOBILE",
+      "number": "(91)98083-4019"
+    }
+  ]
+}
+
+<> 2021-08-15T161452.201.json
+
+###
+
+GET http://localhost:8080/api/v1/people
+Accept: application/json
+
+<> 2021-08-15T161242.200.json
+
+###
+
+POST http://localhost:8080/api/v1/people
+Content-Type: application/json
+
+{
+  "firstName": "Glauber",
+  "lastName": "Gadelha",
+  "cpf": "26558977818",
+  "birthDate": "15-12-1976",
+  "phones": [
+    {
+      "type": "MOBILE",
+      "number": "(91)98083-4019"
+    }
+  ]
+}
+
+<> 2021-08-15T161201.500.json
+
+###
+
+POST http://localhost:8080/api/v1/people
+Content-Type: application/json
+
+{
+  "firstName": "Glauber",
+  "lastName": "Gadelha",
+  "cpf": "26558977818",
+  "birthDate": "15-12-1976",
+  "phones": [
+    {
+      "type": "MOBILE",
+      "number": "(91)98083-4019"
+    }
+  ]
+}
+
+<> 2021-08-15T161125.201.json
+
+###
+
+POST {{url}}/people
+Content-Type: application/json
+
+{
+  "firstName": "Glauber",
+  "lastName": "Gadelha",
+  "cpf": "26558977818",
+  "birthDate": "15-12-1976",
+  "phones": [
+    {
+      "type": "MOBILE",
+      "number": "(91)98083-4019"
+    }
+  ]
+}
+
+<> 2021-08-15T160601.400.json
+
+###
+
+POST {{url}}/people
+Content-Type: application/json
+
+{
+  "firstName": "Glauber",
+  "lastName": "Gadelha",
+  "cpf": "26558977818",
+  "birthDate": "15-12-1976",
+  "phones": [
+    {
+      "type": "MOBILE",
+      "number": "(91)98083-4019"
+    }
+  ]
+}
+
+<> 2021-08-15T124601.500.json
+
+###
+
+GET {{url}}/people/2
+Accept: application/json
+
+<> 2021-08-15T124550.200.json
+
+
+
+###
+
+POST http://localhost:8080/api/v1/people
+Content-Type: application/json
+
+{
+  "firstName": "Glauber",
+  "lastName": "Gadelha",
+  "cpf": "26558977818",
+  "phones": [
+    {
+      "type": "MOBILE",
+      "number": "(91)98083-4019"
+    }
+  ]
+}
+
+<> 2021-08-15T122405.500.json
+
+###
+
+GET http://localhost:8080/api/v1/people
+Accept: application/json
+
+<> 2021-08-15T122318.200.json
+
+###
+
+POST http://localhost:8080/api/v1/people
+Content-Type: application/json
+
+{
+  "firstName": "Glauber",
+  "lastName": "Gadelha",
+  "cpf": "26558977818",
+  "phones": [
+    {
+      "type": "MOBILE",
+      "number": "(91)98083-4019"
+    }
+  ]
+}
+
+<> 2021-08-15T122312.200.json
+
+###
+

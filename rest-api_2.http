@@ -1,0 +1,29 @@
+POST {{url}}/people
+Content-Type: application/json
+
+{
+  "firstName": "Glauber",
+  "lastName": "Gadelha",
+  "cpf": "26558977818",
+  "birthDate": "15-12-1976",
+  "phones": [
+    {
+      "type": "MOBILE",
+      "number": "(91)98083-4019"
+    }
+  ]
+}
+
+<> 2021-08-15T124601.500.json
+<> 2021-08-15T122405.500.json
+<> 2021-08-15T122312.200.json
+
+###
+
+GET {{url}}/people
+Accept: application/json
+
+<> 2021-08-15T124550.200.json
+<> 2021-08-15T122318.200.json
+
+###

@@ -1,0 +1,8 @@
+GET http://localhost:8080/authldap
+Accept: application/json
+
+<> 2021-07-22T155924.200.json
+<> 2021-07-22T155817.200.json
+<> 2021-07-22T155749.404.html
+
+###

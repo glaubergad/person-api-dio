@@ -1,0 +1,73 @@
+DELETE https://glaubergad-peopleapi.herokuapp.com/api/v1/people/1
+
+
+###
+
+PUT https://glaubergad-peopleapi.herokuapp.com/api/v1/people/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "firstName": "Glauber",
+  "lastName": "Gadelha",
+  "cpf": "26558977818",
+  "birthDate": "15-12-1976",
+  "phones": [
+    {
+      "id": 1,
+      "type": "MOBILE",
+      "number": "(91)98083-4019"
+    },
+    {
+      "id": 2,
+"type": "COMMERCIAL",
+"number": "(91)3231-9907"
+}
+]
+}
+
+<> 2021-08-15T185723.200.json
+
+###
+
+GET https://glaubergad-peopleapi.herokuapp.com/api/v1/people/1
+Accept: application/json
+
+<> 2021-08-15T185732.200.json
+<> 2021-08-15T185536.200.json
+
+###
+GET https://glaubergad-peopleapi.herokuapp.com/api/v1/people
+Accept: application/json
+
+<> 2021-08-15T190316.200.json
+<> 2021-08-15T185513.200.json
+
+###
+
+
+
+POST https://glaubergad-peopleapi.herokuapp.com/api/v1/people
+Content-Type: application/json
+
+{
+  "firstName": "Glauber",
+  "lastName": "Gadelha",
+  "cpf": "26558977818",
+  "birthDate": "15-12-1976",
+  "phones": [
+    {
+      "type": "MOBILE",
+      "number": "(91)98083-4019"
+    },
+    {
+      "type": "COMMERCIAL",
+      "number": "(91)3231-4019"
+    }
+  ]
+}
+
+<> 2021-08-15T185448.201.json
+
+
+###
