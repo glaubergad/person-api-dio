@@ -17,7 +17,6 @@ public class SwaggerConfig {
     @Bean
     public Docket api() {
         return new Docket(DocumentationType.SWAGGER_2)
-                .groupName("person-api")
                 .select()
                 .apis(RequestHandlerSelectors.basePackage("br.net.glaubergad.personapidio.controller"))
                 .paths(PathSelectors.any())
